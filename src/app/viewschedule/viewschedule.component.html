@@ -1,0 +1,20 @@
+<h3>
+  CSK Umpiring Schedule:
+</h3>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sched of schedule">
+      <th scope="row">{{sched._id}}</th>
+      <td>{{sched.name}}</td>
+      <td>{{sched.Date}}</td>
+    </tr>
+  </tbody>
+</table>
